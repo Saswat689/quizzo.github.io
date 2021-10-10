@@ -187,39 +187,39 @@ var questionsSt = JSON.parse(localStorage.getItem('questions'));
 
 const questions = [
 {
-	question: "What is the value of pie",
+	question: "What is the Iron Bank’s representative, played by Mark Gatiss, called?",
 	answers: [
-	{ text: "22/7", correct: true },
-	{ text: "0.3", correct: false },
-	{ text: "45", correct: false },
-	{ text: "All of these", correct: false },
+	{ text: "Quorin Halfhand", correct: false },
+	{ text: "Xaro Xhoan Daxon", correct: false },
+	{ text: "Howard from the Halifax", correct: false },
+	{ text: "Tycho Nestoris", correct: true },
 	]
 },
 {
-	question: "What is the current number of states in India?",
+	question: "Who was responsible for the creation of the Night King?",
 	answers: [
-	{ text: "15", correct: false },
-	{ text: "28", correct: false },
-	{ text: "30", correct: false },
-	{ text: "29", correct: true },
+	{ text: "The Lord of Light", correct: false },
+	{ text: "The Children of the Forest", correct: true },
+	{ text: "The Drowned God", correct: false },
+	{ text: "The First Men", correct: false },
 	]
 },
 {
-	question: "What is 2 + 2",
+	question: "In the TV show, what was Hodor called before he got his tragic door-holding nickname?",
 	answers: [
-	{ text: "4", correct: true },
-	{ text: "22", correct: false },
-	{ text: "5", correct: false },
-	{ text: "3", correct: false },
+	{ text: "Wylis", correct: true },
+	{ text: "Horys", correct: false },
+	{ text: "Myrys", correct: false },
+	{ text: "Gladys", correct: false },
 	]
 },
 {
-	question: "Where are the Alps located?",
+	question: "Dany’s dragons are (or were) called Drogon, Viserion and ____?",
 	answers: [
-	{ text: "USA", correct: false },
-	{ text: "Europe", correct: true },
-	{ text: "England", correct: false },
-	{ text: "India", correct: false },
+	{ text: "Dougal", correct: false },
+	{ text: "Vhagar", correct: false },
+	{ text: "Rhaegal", correct: true },
+	{ text: "Balerion", correct: false },
 	]
 }
 ]
