@@ -10,13 +10,25 @@ Before i discuss with you the features of the application be sure to check the d
 
 I know some of you are lazy to see the live demo of it. Here are some examples from the app but again you will not get that feel so be sure to check out the demo.
 
-![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(25).png?raw=true)
+## Home
 
-![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(26).png?raw=true)
+Notice how the bot first guides you through the entire game.
 
-![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(27).png?raw=true)
+![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(24).png?raw=true)
 
-![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(22).png?raw=true)
+## Add a quiz
+
+In this page you can add a quiz or save them to access iit later
+
+![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(32).png?raw=true)
+
+## Color based UX
+
+All these form the part of UX they basically play around with human emotions.
+
+![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(31).png?raw=true)
+
+![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(30).png?raw=true)
 
 ## Features of the application
 
