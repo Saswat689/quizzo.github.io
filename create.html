@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Create a quiz for yourself!</title>
+
+	<style type="text/css">
+		h2{
+			text-align: center;
+			padding: 20px;
+		}
+		.main-form{
+			display: block;
+			width: 40%;
+			height: auto;
+			margin: 50px auto 0 auto;
+		}
+		footer{
+	width: 50%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: black;
+	font-family: 'Roboto',sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 30px 30px;
+}
+footer .brand{
+	margin-left: 10px;
+	color: crimson;
+}
+		@media (max-width: 500px){
+			.main-form{
+				width: 80%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>Quickly create and integrate a quiz for yourself</h2>
+
+	<div class="main-form">
+		<form class="row g-3" id="form">
+			<div class="col-md-12">
+				<label for="question" class="form-label">Question</label>
+				<input type="text" class="form-control" id="question" placeholder="Enter your quiz question" required>
+			</div>
+			<div class="col-md-4">
+				<label for="option1" class="form-label">Option1</label>
+				<input type="text" class="form-control" id="option1" placeholder="Wrong option" required>
+			</div>
+			<div class="col-md-4">
+				<label for="option2" class="form-label">Option2</label>
+				<input type="text" class="form-control" id="option2" placeholder="Wrong option" required>
+			</div>
+			<div class="col-md-4">
+				<label for="option3" class="form-label">Option3</label>
+				<input type="text" class="form-control" id="option3" placeholder="Wrong option" required>
+			</div>
+			<div class="col-md-12">
+				<label for="correct" class="form-label">Correct Answer</label>
+				<input type="text" class="form-control" id="correct" placeholder="Finally the correct answer">
+			</div>
+			<button type="submit" class="btn btn-primary col-12">Post your quiz question</button>
+		</form>
+	</div>
+
+	<a class="btn btn-success" href="index.html" style="position: absolute;
+	top: 10px; right: 10px;">Go to home</a>
+
+	<footer>
+	<span>Created by Saswat for</span><span class="brand">Codingal</span>
+</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+		const form = document.getElementById('form');
+		localStorage.removeItem('question');
+		form.addEventListener('submit',(e) => {
+			e.preventDefault();
+			localStorage = window.localStorage;
+			const question = document.getElementById('question').value
+			const option1 = document.getElementById('option1').value
+			const option2 = document.getElementById('option2').value
+			const option3 = document.getElementById('option3').value
+			const correctOpt = document.getElementById('correct').value
+
+			var questions = [];
+
+			const questionObj = {
+				question: question,
+				answers: [
+				{
+					text: option1,
+					correct: false
+				},
+				{
+					text: option2,
+					correct: false
+				},
+				{
+					text: option3,
+					correct: false
+				},
+				{
+					text: correctOpt,
+					correct: true
+				}
+				]
+			}
+			questions.push(questionObj);
+			questions = questions.concat(JSON.parse(localStorage.getItem('questions')||'[]'));
+
+			localStorage.setItem("questions", JSON.stringify(questions));
+		})
+	</script>
+</body>
+</html>

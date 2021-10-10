@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+:root{
+	--hue-neutral: 200;
+	--hue-wrong: 0;
+	--hue-correct: 145;
+	--success: rgb(240 255 240);
+	--info: rgb(229 246 253);
+	--error: rgb(253 237 237);
+	--info: rgb(229 246 253);
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	font-family: inherit;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: black;
+	transition: background-image 1s linear;
+}
+.container{
+	width: 700px;
+	max-width:80%;
+	height: auto;
+	background: rgba(255, 255, 255,0.87);
+	border-radius: 5px;
+	padding: 32px 30px;
+	box-shadow: 0 0 10px 2px; 
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+}
+.money-falling{
+	display: none;
+	position: absolute;
+	top: 100px;
+	margin: 0 auto;
+}
+#question{
+	font-size: 1.3rem;
+}
+.btn-grid{
+	display: grid;
+	grid-template-columns: repeat(2,auto);
+	gap: 14px;
+	margin: 20px 0;
+}
+.btn{
+	--hue: var(--hue-neutral);
+	background: hsl(var(--hue),100%,50%);
+	border-radius: 5px;
+	padding: 12px 10px;
+	color: white;
+	border: none;
+	outline: none;
+	font-size: 1.1rem;
+	cursor: pointer;
+	font-family: 'Roboto',sans-serif;
+}
+.green{
+	background: green;
+	padding: 10px 12px;
+	font-size: 0.95rem;
+	margin-right: 10px;
+}
+.btn.correct{
+	--hue: var(--hue-correct);
+	color: black;
+}
+.btn.wrong{
+	--hue: var(--hue-wrong);
+}
+
+.start-btn,.next-btn{
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px 20px;
+	margin-right: 10px;
+	width: 50%;
+}
+.controls{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hide{
+	display: none;
+}
+.music-controls{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px 20px;
+}
+.music-controls i{
+	font-size: 25px;
+	color: white;
+}
+
+.scoreboard{
+	width: 200px;
+	height: auto;
+	position: absolute;
+	font-family: 'Roboto',sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	top: 10px;
+	left: 10px;
+	padding: 10px 20px;
+}
+.welcomeText{
+	text-align: center;
+	margin: 13px 0 30px 0;
+}
+.timer{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-family: 'Roboto',sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+#timer{
+	margin-top: 22px;
+}
+/*alerts*/
+.alert{
+	width: 40%;
+	display: flex;
+	align-items: center;
+	padding: 19px 20px;
+	font-family: "Roboto",sans-serif;
+	border-radius: 5px;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.alert .wrapper{
+	padding: 0 10px;
+}
+.alert .ind{
+	font-size: 19px;
+	margin-right: 18px;
+}
+.alert .close{
+	font-size: 19px;
+	margin-left: 70px;
+	cursor: pointer;
+}
+.alert span{
+	font-size: 18px;
+}
+.alert-success{
+	background: var(--success);
+	display: none;
+}
+.alert-info{
+	background: var(--info);
+	display: none;
+	top: 20%;
+	padding: 30px 20px;
+	margin: 0 auto;
+	height: auto;
+	width: 40%;
+	 -moz-box-shadow: 0px 1px 5px 0px #676767;
+  -webkit-box-shadow: 0px 1px 5px 0px #676767;
+  box-shadow: 0px 1px 5px 0px #676767;
+}
+.alert-info .close{
+	position: absolute;
+	top: 14px;
+	right: 20px;
+}
+.in2{
+	margin: 0;
+	top: 30px;
+	left: 43%;
+}
+.in3{
+	margin: 0;
+	top: 30px;
+	left: 10%;
+}
+.in4{
+	margin: 0;
+	top: 30px;
+	left: 43%;
+}
+.alert-error{
+	background: var(--error);
+	display: none;
+}
+.alert-info .wrapper{
+	text-align: center;
+}
+.alert-info .wrapper2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.in1{
+	display: block;
+}
+@media (max-width: 500px){
+	.alert{
+		width: 90%;
+	}
+	.alert span{
+	font-size: 16px;
+}	
+
+.alert .close{
+	margin-left: 10px;
+}
+.btn{
+	padding: 13px 8px;
+	font-size: 1rem;
+}
+.btn-grid{
+	grid-template-columns: repeat(1,auto);
+}
+.alert-info{
+	display: none;
+}
+}
+
+footer{
+	width: 50%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-family: 'Roboto',sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 30px 30px;
+}
+footer .brand{
+	margin-left: 10px;
+	color: crimson;
+}

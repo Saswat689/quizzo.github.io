@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<div class="music-controls">
+		<a class="btn green" href="create.html">Add a quiz</a>
+		<i class="fas fa-music" id="playAudio"></i>
+	</div>
+
+	<div class="scoreboard">
+		<span class="sc-text">Score: </span><span id="score">0</span>
+	</div>
+
+	<div class="timer">
+		<img src="clock.gif" alt="clock" width="110px" height="87px">
+		<span id="timer">0 seconds</span>
+	</div>
+
+	<div class="alert alert-success">
+		<div class="wrapper">
+			<i class="far fa-check-circle ind"></i>
+				<span class="alert-message">Great Answer! Keep improving your scores.</span>
+				<i class="fas fa-times close"></i>
+			</div>	
+	</div>
+
+	<div class="alert alert-error">
+		<div class="wrapper">
+			<i class="fas fa-exclamation-triangle ind"></i>
+			<span class="alert-message">No problem we thought it was hard to try.</span>
+			<i class="fas fa-times close"></i>
+		</div>
+	</div>
+
+<div class="loopAlerts" id="loopAlerts">
+
+	<div class="alert alert-info in1">
+		<div class="wrapper">
+			<h2 class="alert-message">Hey i am Saswat your assistant.</h2>
+			<p>I am going to guide you throughout your journey</p>
+			<div class="wrapper2">
+				<img src="robot.gif" width="200px" height="200px">
+				<button class="nx1 btn">Continue</button>
+			</div>
+		</div>
+		<i class="fas fa-times close"></i>
+	</div>
+
+	<div class="alert alert-info in2">
+		<div class="wrapper">
+			<h2 class="alert-message">Press the right music icons to get a real feel.</h2>
+			<p>Play the theme song and get the real feeling for the trivia!</p>
+			<div class="wrapper2">
+			<img src="robot.gif" width="200px" height="200px">
+			<button class="nx2 btn">Continue</button>
+			</div>
+		</div>
+		<i class="fas fa-times close"></i>
+	</div>
+
+	<div class="alert alert-info in3">
+		<div class="wrapper">
+			<h2 class="alert-message">On the left side you have the scores.</h2>
+			<p>Use the scores wisely at the last leaderboard is shown.</p>
+			<div class="wrapper2">
+			<img src="robot.gif" width="200px" height="200px">
+			<button class="nx3 btn">Continue</button>
+			</div>
+		</div>
+		<i class="fas fa-times close"></i>
+	</div>
+
+	<div class="alert alert-info in4">
+		<div class="wrapper">
+			<h2 class="alert-message">You also have an option to add questions to this list.</h2>
+			<p>Add questions so that you can play them later</p>
+			<div class="wrapper2">
+			<img src="robot.gif" width="200px" height="200px">
+			<button class="nx4 btn">Continue</button>
+			</div>
+		</div>
+		<i class="fas fa-times close"></i>
+	</div>
+
+	<div class="alert alert-info in5">
+		<div class="wrapper">
+			<h2 class="alert-message">Now enjoy playing :)</h2>
+			<div class="wrapper2">
+			<img src="robot.gif" width="200px" height="200px">
+			<button class="nx5 btn">Finish</button>
+			</div>
+		</div>
+		<i class="fas fa-times close"></i>
+	</div>
+
+</div>
+
+
+	<div class="container">
+		<div id="question-container" class="hide">
+			<div id="question">Question</div>
+			<div id="answer-buttons" class="btn-grid"></div>
+		</div>
+
+		<div class="controlsWrapper">
+			<div class="welcomeText" id="welcomeText">
+				<h2>The Ultimate Game of Thrones Quiz!</h2>
+				<p>Challenge the game of thrones and battle till the end to receive points.</p>
+			</div>
+			<div class="controls">
+				<button id="start-btn" class="start-btn btn">Start</button>
+				<button id="next-btn" class="next-btn btn hide">Next</button>
+			</div>
+		</div>	
+	</div>
+
+
+	<img src="./money-falling.gif" width="300px" height="300px" class="money-falling" id="money-falling">
+
+<footer>
+	<span>Created by Saswat for</span><span class="brand">Codingal</span>
+</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript" src="script.js" async defer></script>
+	</body>
+	</html>
