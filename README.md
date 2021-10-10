@@ -26,6 +26,9 @@ I know some of you are lazy to see the live demo of it. Here are some examples f
 * **Add your own questions:**
   Probably one of the best features of quizzo. Add questions to the list and play with them later.
   
+* **Play the Game Of Thrones Theme Song:**
+  Play the game of thrones theme song and see how it changes emotions.
+  
 * **Different colour schemes:**
   A large variety of colour schemes are used to create the UI/UX with the concept of human emotions in mind.
   
