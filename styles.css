@@ -226,7 +226,7 @@ body{
 .in1{
 	display: block;
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
 	.alert{
 		width: 90%;
 	}
@@ -246,6 +246,12 @@ body{
 }
 .alert-info{
 	display: none;
+}
+.timer{
+	display: none;
+}
+footer{
+	width: 100%;
 }
 }
 
