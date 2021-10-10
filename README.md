@@ -1,4 +1,4 @@
-# Quizzo the ultimate quiz game
+# Quizzo the ultimate quiz game :smiley:
 
 Quizzo was made by Saswat a 13 year old kid who loves coding. Me! So hey everyone let me introduce you to this amazing open sourced quiz app.
 
@@ -32,7 +32,7 @@ I know some of you are lazy to see the live demo of it. Here are some examples f
 * **Animations:**
   A number of animations including gif's are used to enhance UX. For example once you finish the quiz you get a coins rain.
   
-  Lastly this appplication was built for a hackathon that [Codingal](https://www.codingal.com/) provided. I like to thank them for giving me this opportunity.
+  Lastly this appplication was built for a hackathon that [Codingal](https://www.codingal.com/) provided. I like to thank them for giving me this opportunity.:wink:
    
   
   
