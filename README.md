@@ -18,6 +18,8 @@ Notice how the bot first guides you through the entire game.
 
 ## Add a quiz
 
+In this page you can add a quiz or save them to access iit later
+
 ![Screenshot](https://github.com/Saswat689/quizzo.github.io/blob/master/Screenshot%20(32).png?raw=true)
 
 ## Color based UX
