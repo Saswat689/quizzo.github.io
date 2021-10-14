@@ -1,6 +1,6 @@
 # Quizzo the ultimate quiz game :smiley:
 
-Quizzo was made by Saswat a 13 year old kid who loves coding. Me! So hey everyone let me introduce you to this amazing open sourced quiz app.
+Quizzo is a quiz app that allows you to create,play and get into the world of quizzes .Hey everyone let me introduce you to this amazing open sourced quiz app.
 
 ## Demo
 
